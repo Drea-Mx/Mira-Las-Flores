@@ -17,9 +17,16 @@ const Splash = () => {
                 <div></div>
             </div>
             <div className='centro'>
-                <img src='/logo.svg' alt='Mira Las Flores' />
-                <p>Próximamente</p>
+                <div className='logo'>
+                    <img src='/logo.svg' alt='Mira Las Flores' />
+                    <p>Próximamente</p>
+                </div>
+                <div className='info'>
+                    <img src='/logo.svg' alt='Mira Las Flores' />
+                    <p>El proyecto "Mira las Flores", una iniciativa de la diseñadora regiomontana Mara Osman, tiene como objetivo el generar una comunidad alrededor de la importancia que tiene la salud mental en nuestras vidas, creando espacios para hablar, y sentirse escuchados, y darnos cuenta que no estamos solos en esto.</p>
+                </div>
             </div>
+            <a href='http://eepurl.com/h7fTAv'>Suscribete a nuestro newsletter para tener noticias del proyecto</a>
         </SplashContainer>
     )
 }
@@ -28,6 +35,17 @@ const SplashContainer = styled.section`
 position: relative;
 height: 100vh;
 width: 100vw;
+a {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+    text-decoration: underline;
+    text-transform: uppercase;
+    width: 80%;
+}
 .centro {
     position: absolute;
     top: 50%;
@@ -37,15 +55,47 @@ width: 100vw;
     text-align: center;
     width: 60%;
     color: white;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     @media (max-width: 680px) {
             width: 80%;
         }
-    p {
+    .logo {
+        position: absolute;
+        transition: opacity 350ms linear;
+    }
+    .logo p {
         text-transform: uppercase;
         letter-spacing: 20px;
         margin-top: 20px;
         @media (max-width: 680px) {
             letter-spacing: 8px;
+        }
+    }
+    &:hover {
+        .logo {
+            opacity: 0;
+        }
+        .info {
+            opacity: 1;
+        }
+    }
+}
+.centro {
+    position: absolute;
+    
+    .info {
+        opacity: 0;
+        transition: opacity 350ms linear;
+        img {
+            width: 70%;
+        }
+        p {
+            margin-top: 20px;
+            line-height: 1.5;
+            font-size: 1.2rem;
         }
     }
 }

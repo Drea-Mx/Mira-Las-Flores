@@ -15,10 +15,10 @@ const Carteles = () => {
                     <img src='/logoColors.png' alt='Mira Las Flores' />
                 </div>
                 <div className="video">
-                    <button>
+                    <a href="https://vimeo.com/748356576" target='_blank'  rel="noreferrer">
                         <span>ver video</span>
                         <img src='/flechaDer.svg' alt='Mira Las Flores' />
-                    </button>
+                    </a>
                 </div>
             </div>
             <div className="contenido">
@@ -103,7 +103,7 @@ padding-top: 50px;
             &:hover {
                 transform: scale(1.05);
             }
-            button {
+            a {
                 display: flex;
                 justify-content: center;
                 align-items: center;

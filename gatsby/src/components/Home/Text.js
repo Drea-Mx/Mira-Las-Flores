@@ -43,10 +43,10 @@ const Text = () => {
                         <img src='/logo.svg' alt='Mira Las Flores' />
                     </div>
                     <div className="video">
-                        <button>
+                        <a href="https://vimeo.com/748356576" target='_blank'  rel="noreferrer">
                             <span>ver video</span>
                             <img src='/flechaDer.svg' alt='Mira Las Flores' />
-                        </button>
+                        </a>
                     </div>
                 </div>
                 <button className="desliza" onClick={scrollYByVh}>
@@ -94,6 +94,9 @@ position: relative;
         display: flex;
         justify-content: space-between;
         width: 100%;
+        @media (max-width: 850px) {
+            flex-direction: column;
+        }
         .insta {
             margin-left: 50px;
             background: white;
@@ -137,7 +140,7 @@ position: relative;
             &:hover {
                 transform: scale(1.05);
             }
-            button {
+            a {
                 display: flex;
                 justify-content: center;
                 align-items: center;

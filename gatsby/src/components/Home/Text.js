@@ -105,6 +105,13 @@ position: relative;
             border-radius: 20px;
             transition: transform 100ms ease-in;
             cursor: pointer;
+            @media (max-width: 850px) {
+                width: 200px;
+                margin-top: 30px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 10px;
+            }
             &:hover {
                 transform: scale(1.05);
             }
@@ -137,6 +144,10 @@ position: relative;
             border-radius: 20px;
             transition: transform 100ms ease-in;
             cursor: pointer;
+            @media (max-width: 850px) {
+                width: 200px;
+                margin: 0 auto;
+            }
             &:hover {
                 transform: scale(1.05);
             }

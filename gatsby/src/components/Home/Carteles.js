@@ -59,6 +59,9 @@ padding-top: 50px;
         display: flex;
         justify-content: space-between;
         width: 100%;
+        @media (max-width: 850px) {
+            flex-direction: column;
+        }
         .insta {
             margin-left: 50px;
             background: #EE4069;
@@ -67,6 +70,13 @@ padding-top: 50px;
             border-radius: 20px;
             transition: transform 100ms ease-in;
             cursor: pointer;
+            @media (max-width: 850px) {
+                width: 200px;
+                margin-top: 30px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 10px;
+            }
             &:hover {
                 transform: scale(1.05);
             }
@@ -100,6 +110,10 @@ padding-top: 50px;
             border-radius: 20px;
             transition: transform 100ms ease-in;
             cursor: pointer;
+            @media (max-width: 850px) {
+                width: 200px;
+                margin: 0 auto;
+            }
             &:hover {
                 transform: scale(1.05);
             }

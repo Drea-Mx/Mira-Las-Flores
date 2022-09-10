@@ -107,7 +107,7 @@ position: relative;
             cursor: pointer;
             @media (max-width: 850px) {
                 width: 200px;
-                margin-top: 30px;
+                margin-top: 50px;
                 margin-left: auto;
                 margin-right: auto;
                 margin-bottom: 10px;

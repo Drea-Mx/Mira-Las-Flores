@@ -14,7 +14,18 @@ const SliderCarr = () => {
         speed: 500,
         centerMode: true,
         slidesToShow: 3,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        responsive: [
+            {
+              breakpoint: 850,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: false
+              }
+            }
+          ]
       };
 
     return(
@@ -242,6 +253,9 @@ margin-top: 100px;
 .title {
     font-size: 4rem;
     margin-bottom: 50px;
+    @media (max-width: 850px) {
+        margin-bottom: 20px;
+    }
 }
 .slick-track {
     display: flex;

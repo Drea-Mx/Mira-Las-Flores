@@ -101,6 +101,10 @@ padding-top: 50px;
             left: 50%;
             transform: translateX(-50%);
             width: 40%;
+            @media (max-width: 850px) {
+                top: -30px;
+                width: 80%;
+            }
         }
         .video {
             margin-right: 50px;
